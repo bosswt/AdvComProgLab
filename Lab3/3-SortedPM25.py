@@ -6,4 +6,6 @@ for line in file:
     if temp != "-":
         pm.append(int(temp))
 
-print(sorted(pm, reverse=True))
+pm.sort(reverse=True)
+for i in pm:
+    print(i)
