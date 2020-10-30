@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Lab9
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input placeholder="URL" type="url" [(ngModel)]="url" name="url"></ion-input>
+  <button ion-button full (click)="click()">Get Image</button>
+  <ion-card>
+    <ion-card-header>
+      <img src="{{imageUrl}}">
+    </ion-card-header>
+  </ion-card>
+</ion-content>
