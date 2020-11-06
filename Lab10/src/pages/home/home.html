@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Student Score
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label position="stacked">ID</ion-label>
+    <ion-input placeholder="Student ID" [(ngModel)]="studentId"></ion-input>
+  </ion-item>
+  <button ion-button (click)="showScore(studentId)" full>GET SCORE</button>
+  <div *ngIf="student | async as std">
+    <ion-card>
+      <ion-card-header>
+        <ion-title>{{std.data.id}}</ion-title>
+      </ion-card-header>
+      <h2><b>Q1: </b>{{std.data["quiz 1"]}}</h2>
+      <h2><b>Q2: </b>{{std.data["quiz 2"]}}</h2>
+      <h2><b>Q3: </b>{{std.data["quiz 3"]}}</h2>
+      <h2><b>Q4: </b>{{std.data["quiz 4"]}}</h2>
+      <h2><b>Q5: </b>{{std.data["quiz 5"]}}</h2>
+    </ion-card>
+  </div>
+</ion-content>
