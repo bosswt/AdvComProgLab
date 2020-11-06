@@ -37,9 +37,9 @@ def find_score():
     id = itemgetter("id")(dict(request.args))
     data = dict(studentDb.scores.find_one({"id": id}))
     del data["_id"]
-    response = dict()
-    response["data"] = data
-    return jsonify(response)
+    response = jsonify({"data": data})
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
 
 
 app.run()
