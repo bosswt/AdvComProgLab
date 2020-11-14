@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Student Score
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngFor="let std of studentList">
+    <ion-card>
+      <ion-card-header>
+        <ion-title>{{std.id}}</ion-title>
+      </ion-card-header>
+      <h2><b>Q1: </b>{{std["quiz 1"]}}</h2>
+      <h2><b>Q2: </b>{{std["quiz 2"]}}</h2>
+      <h2><b>Q3: </b>{{std["quiz 3"]}}</h2>
+      <h2><b>Q4: </b>{{std["quiz 4"]}}</h2>
+      <h2><b>Q5: </b>{{std["quiz 5"]}}</h2>
+      <h2><b>SUM: </b>{{std["sum"]}}</h2>
+    </ion-card>
+  </div>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading"></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
