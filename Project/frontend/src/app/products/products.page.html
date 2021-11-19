@@ -1,0 +1,27 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <div *ngFor="let item of stocks;let i = index" col-6>
+        <ion-card>
+          <img src={{item.img}} class="center">
+          <ion-card-header>
+            <ion-card-title>{{item.name}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Stocks: {{item.qty}}
+            <br>
+            Price: {{item.price}}
+          </ion-card-content>
+          <ion-item>
+            <ion-icon name="remove-circle" (click)="decrementQty(i)" item-right></ion-icon>
+            <ion-input type="number" min="0" [(ngModel)]="cart[i].qty"></ion-input>
+            <ion-icon name="add-circle" (click)="incrementQty(i)" item-right></ion-icon>
+          </ion-item>
+        </ion-card>
+      </div>
+    </ion-row>
+  </ion-grid>
+  <div style="text-align: center;">
+    <ion-button color="primary" (click)="checkout()">Checkout</ion-button>
+  </div>
+</ion-content>

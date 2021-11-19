@@ -1,0 +1,46 @@
+{
+	"stocks": [
+		{
+			"id": "1",
+			"name": "iPhone 12 Pro Pacific Blue 512 GB",
+			"qty": 5,
+			"price": 48900,
+			"img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1604021661000"
+		},
+		{
+			"id": "2",
+			"name": "iPhone 12 Pro Max Gold 512 GB",
+			"qty": 7,
+			"price": 51900,
+			"img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-gold-hero?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1604021660000"
+		},
+		{
+			"id": "3",
+			"name": "iPhone 12 mini Blue 256 GB",
+			"qty": 3,
+			"price": 31900,
+			"img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-mini-blue-select-2020?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1604343706000"
+		},
+		{
+			"id": "4",
+			"name": "iPhone 12 Green 256 GB",
+			"qty": 4,
+			"price": 35900,
+			"img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-green-select-2020?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1604343704000"
+		},
+		{
+			"id": "5",
+			"name": "iPad Air Rose Gold(Wi-Fi) 256 GB",
+			"qty": 2,
+			"price": 24900,
+			"img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-gold-202009?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1598650644000"
+		},
+		{
+			"id": "6",
+			"name": "Macbook Pro(M1) 13 Inches Space Gray 512 GB",
+			"qty": 1,
+			"price": 49900,
+			"img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-spacegray-select-202011?wid=1280&hei=1190&fmt=jpeg&qlt=80&.v=1603406905000"
+		}
+	]
+}

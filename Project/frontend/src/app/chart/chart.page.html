@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Chart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Number of devices sold</ion-card-subtitle>
+      <ion-card-title>Apple Devices</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart></canvas>
+    </ion-card-content>
+  </ion-card>
+  <div *ngFor="let product of stocks" style="margin:20px">
+    <p>-ID: {{product.id}}:{{product.name}}</p>
+    Stocks:{{product.qty}}
+    <br>
+  </div>
+</ion-content>
